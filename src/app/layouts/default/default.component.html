@@ -1,0 +1,15 @@
+<!-- HEADER DESKTOP-->
+<app-header  flexLayout="column"></app-header>
+<!--PAGE CONTAINER-->
+<div flexLayout="row" fxFlex class="main">
+    <!-- MENU SIDEBAR-->
+    <div fxFlex="20">       
+        <app-sidebar fxFlex></app-sidebar>
+    </div>
+    <!-- MAIN CONTENT-->
+    <div fxFlex="80" id='content' #content class="content">
+        <router-outlet></router-outlet>
+    </div>
+</div>
+<!-- FOOTER DESKTOP-->
+<app-footer flexLayout="column"></app-footer>
